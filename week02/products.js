@@ -29,6 +29,8 @@ createApp({
 
                 })
         },
+
+        //方法集
         //取得商品資料
         getData() {
             const url = `${this.apiUrl}/api/${this.apiPath}/admin/products`;
@@ -48,7 +50,7 @@ createApp({
         }
 
     },
-
+    //生命週期，mounted是網頁初始化後執行
     mounted() {
         //取出Token
         const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
